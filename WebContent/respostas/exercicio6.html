@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Trabalhando com CSS BOX-SIZING</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/exercicio6.css"  />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">BOX 1</div>
+            <div class="box">BOX 2</div>
+
+
+        </div>
+        <p>
+            Observe a seguir o resultado da renderização da marcação HTML mostrada estilizada segundo as regras CSS acima.
+
+            Observe que o layout quebra, isto é, os dois boxes não se posicionam um ao lado do outro. Isto porque a largura total de cada DIV é de 60% (50% + 2x5%) de acordo com o Box Model padrão. Usando a declaração box-sizing: border-box alteramos o Box Model, fazendo com que a largura de cada box seja 50% e não haverá "quebra do layout".
+        </p>
+
+
+        <div class="container_com_box">
+            <div class="box_com_box">BOX 1</div>
+            <div class="box_com_box">BOX 2</div>
+
+
+        </div>
+
+        <p>
+            Resumindo
+            Use a declaração box-sizing: border-box em todos os seus projetos. Ele tornará seu trabalho mais produtivo.
+
+            As regras CSS a acrescentar na folha de estilos destinada a todas as páginas, com a finalidade de usar o Box Model Corrigido no site são conforme mostradas a seguir.
+
+            CSS
+            html {
+            box-sizing: border-box;
+            }
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+            Mas, esteja ciente de que ao definir o Box Model Corrigido em um projeto existente é quase certo que o layout quebrará a menos que você se disponha a encarar o trabalhão de recalcular as dimensões dos boxes do site
+
+            Suporte nos navegadores: O Internet Explorer oferece suporte até a versão IE8. 😩.
+
+            Se você pretende servir os IE6 e IE7 use um polyfill.
+        </p>
+        <hr />
+        Artigo retirado do site;<br />
+        <a href="http://maujor.com/tutorial/propriedade-css-box-sizing.php">Maujor</a>
+    </body>
+</html>

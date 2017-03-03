@@ -1,0 +1,48 @@
+fieldset{
+    width: 500px;
+    margin: 10px auto;
+    border: 1px dashed black;
+    background: #F8F8FF
+    
+}
+legend{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    font-family: cursive;
+    background: black;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+label{
+    font-size: 18px;
+     margin-top: 10px;
+}
+form{
+    padding-left: 70px;
+}
+
+input{
+   
+    margin-bottom: 20px;
+}
+input[required]{
+    color: red;
+}
+#email, #pass{
+    border: 1px solid blue;
+    width: 290px;
+    height: 30px;
+    padding: 10px;
+     font-family: cursive;  
+}
+#login_btn{
+    border: none;
+    background: #0059bc;
+    color: white;
+    width: 90px;
+    height: 30px;
+    margin-left: 220px
+}

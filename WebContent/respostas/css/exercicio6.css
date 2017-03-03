@@ -1,0 +1,31 @@
+.container {
+  height: 300px;
+  background: #f2f2f2;
+}
+.box {
+  float: left;
+  width: 50%;
+  padding: 5%;
+  background: red;
+}
+.box:last-child {
+  background: green;
+}
+
+.container_com_box {
+    box-sizing: border-box;
+  height: 300px;
+  background: #f2f2f2;
+}
+.box_com_box {
+    box-sizing: inherit;
+  float: left;
+  width: 50%;
+  padding: 5%;
+  background: red;
+}
+.box_com_box:last-child {
+  background: green;
+}
+
+
